@@ -4,6 +4,8 @@
 
 package br.com.bryan.sistemadecontroledealuno;
 
+import java.util.Scanner;
+
 /**
  *
  * @author bryan
@@ -11,6 +13,22 @@ package br.com.bryan.sistemadecontroledealuno;
 public class SistemaDeControleDeAluno {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner ler = new Scanner (System.in);
+    
+        String nome[] = new String[10];
+        float nota1[] = new float[10];
+        float nota2[] = new float[10];
+        int opcao = 0;
+    
+        do{
+            System.out.println("========MENU=======");
+            System.out.println("1 - Cadrastrar aluno");
+            System.out.println("2 - Listrar alunos");
+            System.out.println("3 - Calcular média");
+            System.out.println("4 - Situação");
+            System.out.println("5 - Sair");
+            opcao = ler.nextInt();
+            
+        }while(opcao != 5);
     }
 }
